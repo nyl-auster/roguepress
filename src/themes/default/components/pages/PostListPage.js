@@ -10,7 +10,7 @@ const PostListPage = props => {
   return (
     <Layout>
       <h2>derniers contenus : </h2>
-      {props.data.posts && <PostList edges={props.posts.edges} />}
+      {props.data.posts && <PostList edges={props.data.posts.edges} />}
     </Layout>
   );
 };

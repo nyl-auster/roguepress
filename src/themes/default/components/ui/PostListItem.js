@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const PostListItem = ({ post }) => (
   <div style={{ marginBottom: "2rem" }}>
     <style>
@@ -7,7 +8,7 @@ const PostListItem = ({ post }) => (
     </style>
     <h2 dangerouslySetInnerHTML={{ __html: post.title }} />
     <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-    <LinkButton to={`/post/${post.slug}`}>Read more</LinkButton>
+    <Link to={`/post/${post.slug}`}>Read more</Link>
   </div>
 );
 
